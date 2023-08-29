@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "sub_category")
 public class SubCategory {
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_sub_category")
     private Long idSubCategory;
     private String description;

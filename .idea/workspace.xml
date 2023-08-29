@@ -4,33 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b07677-657f-43a9-b7c7-00b5562a6704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scaffold-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/FundsDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/TransferType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/repository/TransactionRepository.java" afterDir="false" />
+    <list default="true" id="95b07677-657f-43a9-b7c7-00b5562a6704" name="Changes" comment="Melhorei a modelagem de dados, com enums, refatorei o código">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/controller/ValueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/dto/ValueDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/dto/TransactionDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Church.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/repository/ValueRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/service/ValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meva/finance/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/controller/ValueController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/dto/ValueDto$ValueDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/dto/ValueDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/model/Value$ValueBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/model/Value.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/repository/ValueRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meva/finance/repository/ValueRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/service/ValueService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scaffold-java-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scaffold-java-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scaffold-java-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/scaffold-java-0.0.1.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/controller/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/dto/TransactionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/dto/TransactionDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/SubCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/SubCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meva/finance/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meva/finance/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meva/finance/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/meva/finance/model/SubCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meva/finance/model/SubCategory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,20 +70,21 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ruanp/Workspace/meva-producer-bank&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/ruanp/Workspace/meva-producer-bank",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.meva.finance.service" />
@@ -196,12 +186,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689441774663</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="melhorei minhas classes de model, nomenclatura. Impkementei serviço que busca valor total">
+      <created>1693262125573</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693262125573</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fiz balanceamento de valor total de acordo com o registro value" />
-    <option name="LAST_COMMIT_MESSAGE" value="fiz balanceamento de valor total de acordo com o registro value" />
+    <MESSAGE value="melhorei minhas classes de model, nomenclatura. Impkementei serviço que busca valor total" />
+    <option name="LAST_COMMIT_MESSAGE" value="melhorei minhas classes de model, nomenclatura. Impkementei serviço que busca valor total" />
   </component>
 </project>

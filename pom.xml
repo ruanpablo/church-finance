@@ -6,7 +6,7 @@
 
 	<groupId>org.springframework</groupId>
 	<artifactId>scaffold-java</artifactId>
-	<version>0.0.1</version>
+	<version>11</version>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

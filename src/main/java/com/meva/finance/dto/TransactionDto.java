@@ -1,7 +1,6 @@
 package com.meva.finance.dto;
 
 import com.meva.finance.model.TransferType;
-import com.meva.finance.model.FundsDirection;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +15,6 @@ import java.time.LocalDateTime;
 public class TransactionDto {
     private String offerer;
     private String category;
-    private FundsDirection fundsDirection;
     private TransferType transferType;
     private Double value;
     private LocalDateTime dateTime;

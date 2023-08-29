@@ -5,8 +5,10 @@ import javax.persistence.*;
 @Entity
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_category")
     private Long idCategory;
     private String description;
+    @Enumerated(EnumType.STRING)
+    private FundsDirection foundsDirection;
 }

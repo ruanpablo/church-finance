@@ -29,7 +29,7 @@ public class TransactionService {
         return ResponseEntity.ok(transactionRepository.save(transaction).getOfferer());
     }
 
-    public void TotalBalance(){
-        transactionRepository.calculateTotalBalance();
+    public Double totalBalance(){
+        return transactionRepository.calculateTotalBalance();
     }
 }

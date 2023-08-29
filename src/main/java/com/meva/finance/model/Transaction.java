@@ -17,11 +17,10 @@ import java.time.LocalDateTime;
 public class Transaction {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id_value")
-    private Long idValue;
-    @Enumerated(EnumType.STRING)
-    private FundsDirection fundsDirection;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_transaction")
+    private Long idTransaction;
+
     @Enumerated(EnumType.STRING)
     private TransferType transferType;
     private String offerer;
@@ -33,8 +32,7 @@ public class Transaction {
 
     public static Transaction converter(TransactionDto valueDto) {
         return com.meva.finance.model.Transaction.builder().offerer(valueDto.getOfferer())
-                .amount(valueDto.getValue()).transferType(valueDto.getTransferType()).
-                fundsDirection(valueDto.getFundsDirection()).dateTime(valueDto.getDateTime()).build();
+                .amount(valueDto.getValue()).transferType(valueDto.getTransferType())
+                .dateTime(valueDto.getDateTime()).build();
     }
-
 }

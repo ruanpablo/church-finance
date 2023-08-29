@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/value")
+@RequestMapping("/transaction")
 public class TransactionController {
 
 	@Autowired
@@ -17,6 +17,12 @@ public class TransactionController {
 	@PostMapping("/register")
 	public ResponseEntity<String> register(@RequestBody TransactionDto valueDto) {
 		return transactionService.register(valueDto);
+	}
+
+	@GetMapping("/totalBalance")
+	public ResponseEntity<Double> totalBalanceChurch(){
+		Double totalBalance = transactionService.totalBalance();
+		return ResponseEntity.ok(totalBalance);
 	}
 
 }
