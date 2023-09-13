@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
@@ -24,7 +25,7 @@ public class Transaction {
     @Enumerated(EnumType.STRING)
     private TransferType transferType;
     private String offerer;
-    private Double amount;
+    private BigDecimal amount;
     private LocalDateTime dateTime;
     @ManyToOne
     @JoinColumn(name = "sub_category_id")

@@ -38,7 +38,7 @@ http://localhost:8080/actuator/health
 Assim que o projeto estiver sendo executado, é possível verificar as APIs expostas acessando a URL:
 
 ```
-http://localhost:8080/swagger-ui.html
+http://localhost:8484/swagger-ui.html
 ```
 
 # Documentação

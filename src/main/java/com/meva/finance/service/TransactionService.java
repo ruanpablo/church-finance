@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 @Service
@@ -29,7 +30,7 @@ public class TransactionService {
         return ResponseEntity.ok(transactionRepository.save(transaction).getOfferer());
     }
 
-    public Double totalBalance(){
+    public BigDecimal totalBalance(){
         return transactionRepository.calculateTotalBalance();
     }
 }

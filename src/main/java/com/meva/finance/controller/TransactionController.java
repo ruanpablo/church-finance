@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+
 @RestController
 @RequestMapping("/transaction")
 public class TransactionController {
@@ -20,8 +22,8 @@ public class TransactionController {
 	}
 
 	@GetMapping("/totalBalance")
-	public ResponseEntity<Double> totalBalanceChurch(){
-		Double totalBalance = transactionService.totalBalance();
+	public ResponseEntity<BigDecimal> totalBalanceChurch(){
+		BigDecimal totalBalance = transactionService.totalBalance();
 		return ResponseEntity.ok(totalBalance);
 	}
 

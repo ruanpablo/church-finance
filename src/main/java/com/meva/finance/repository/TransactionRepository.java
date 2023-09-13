@@ -5,6 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.math.BigDecimal;
+
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 
@@ -12,7 +14,6 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
             "FROM transaction t " +
             "JOIN sub_category sc ON t.sub_category_id = sc.id_sub_category " +
             "JOIN category c ON sc.id_category = c.id_category", nativeQuery = true)
-    Double calculateTotalBalance();
-
+    BigDecimal calculateTotalBalance();
 
 }
